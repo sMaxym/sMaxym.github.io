@@ -1,0 +1,95 @@
+#content {
+    display: block;
+    position: relative;
+    width: 60%;
+    height: inherit;
+    left: 25%;
+}
+
+#content-display {
+    display: flex;
+    height: inherit;
+}
+
+#content-display>#content-topic {
+    flex-grow: 1;
+}
+
+#content-display>#tag-search {
+    flex-basis: 10%;
+}
+
+#content-topic {
+    height: 100%;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#tag-search {
+    display: block;
+    position: fixed;
+    width: 15%;
+    left: 85%;
+    background-color: rgb(0, 17, 255);
+    background: linear-gradient(to top, rgb(0, 17, 255), #ff0000);
+    height: 100%;
+}
+
+#tag-search>.search {
+    display: block;
+    margin: 20px;
+}
+
+#tag-search>.search * {
+    margin: 10px auto;
+}
+
+.search-label {
+    font-family: 'Press Start 2P', cursive;
+    background: -webkit-linear-gradient(rgb(145, 255, 0), rgb(0, 4, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rotate-text {
+    animation: rotation 1s infinite linear;
+}
+  
+@keyframes rotation {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(359deg);
+    }
+}
+
+.submit-btn {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    transition: 5s all;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 10px 20px;
+    background-color: rgb(0, 17, 255);
+    background: linear-gradient(to top, rgb(0, 17, 255), #ff0000);
+}
+
+.submit-btn:hover {
+    transform: rotate3d(1, 1, 1, 900deg);
+}
+
+.check {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+}
+
+.input-text {
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 0;
+}
+
+#content-topic {
+    color: #fff;
+    padding: 20px 20px;
+}

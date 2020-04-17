@@ -1,0 +1,73 @@
+#nav-wrapper {
+    width: 25%;
+    position: fixed;
+    background-color: rgb(0, 17, 255);
+    background: linear-gradient(to top, rgb(0, 17, 255), #ff0000);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav>.nav-list {
+    list-style-type: none;
+}
+
+#nav-wrapper>#nav-logo>img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.nav>.nav-list>.nav-item {
+    margin: 10px 0;
+    height: 35px;
+}
+
+.nav>.nav-list>.nav-item>a {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    background: -webkit-linear-gradient(rgb(0, 247, 255), rgb(251, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s all;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+.nav>.nav-list>.nav-item>a:hover{
+    background: -webkit-linear-gradient(rgb(255, 0, 255),rgb(251, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+}
+
+#nav-wrapper>.links {
+    display: block;
+    margin: 0 auto;
+}
+
+#nav-wrapper>.links>.link-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav-wrapper>.links>.link-list>.link-item {
+    display: inline-block;
+}
+
+#nav-wrapper>.links>.link-list img {
+    width: 75px;
+    height: 75px;
+    transition: 0.3s all;
+}
+
+#nav-wrapper>.links>.link-list img:hover {
+    width: 100px;
+    height: 100px;
+}
+
